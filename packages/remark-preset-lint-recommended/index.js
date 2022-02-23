@@ -48,7 +48,11 @@ const remarkPresetLintRecommended = {
     remarkLintNoShortcutReferenceLink,
     remarkLintNoUndefinedReferences,
     remarkLintNoUnusedDefinitions
-  ]
+  ],
+  settings: {
+    bulletOrdered: '.',
+    listItemIndent: 'one'
+  }
 }
 
 export default remarkPresetLintRecommended

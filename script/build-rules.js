@@ -951,7 +951,11 @@ presets(root).then((presetObjects) => {
 
     fs.writeFileSync(
       path.join(base, 'readme.md'),
-      remark().use(remarkGfm).stringify({type: 'root', children})
+      remark()
+        .use(remarkGfm)
+        // TODO: Remove after syntax-tree/mdast-util-to-markdown#48
+        .use({settings: {listItemIndent: 'one'}})
+        .stringify({type: 'root', children})
     )
 
     console.log('✓ wrote `readme.md` in `' + basename + '`')

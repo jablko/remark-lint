@@ -14,18 +14,18 @@
 
 ## Contents
 
-*   [What is this?](#what-is-this)
-*   [When should I use this?](#when-should-i-use-this)
-*   [Presets](#presets)
-*   [Install](#install)
-*   [Use](#use)
-*   [API](#api)
-    *   [`unified().use(remarkLintNoUndefinedReferences[, config])`](#unifieduseremarklintnoundefinedreferences-config)
-*   [Recommendation](#recommendation)
-*   [Examples](#examples)
-*   [Compatibility](#compatibility)
-*   [Contribute](#contribute)
-*   [License](#license)
+* [What is this?](#what-is-this)
+* [When should I use this?](#when-should-i-use-this)
+* [Presets](#presets)
+* [Install](#install)
+* [Use](#use)
+* [API](#api)
+  * [`unified().use(remarkLintNoUndefinedReferences[, config])`](#unifieduseremarklintnoundefinedreferences-config)
+* [Recommendation](#recommendation)
+* [Examples](#examples)
+* [Compatibility](#compatibility)
+* [Contribute](#contribute)
+* [License](#license)
 
 ## What is this?
 
@@ -124,10 +124,10 @@ This rule supports standard configuration that all remark lint rules accept
 
 The following options (default: `undefined`) are accepted:
 
-*   `Object` with the following fields:
-    *   `allow` (`Array<string>`, default: `[]`)
-        — text that you want to allowed between `[` and `]` even though it’s
-        undefined
+* `Object` with the following fields:
+  * `allow` (`Array<string>`, default: `[]`)
+    — text that you want to allowed between `[` and `]` even though it’s
+    undefined
 
 ## Recommendation
 
