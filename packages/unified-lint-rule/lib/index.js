@@ -100,9 +100,7 @@ function coerce(name, value) {
 
   let level = result[0]
 
-  if (typeof level === 'boolean') {
-    level = level ? 1 : 0
-  } else if (typeof level === 'string') {
+  if (typeof level === 'string') {
     if (level === 'off') {
       level = 0
     } else if (level === 'on' || level === 'warn') {
